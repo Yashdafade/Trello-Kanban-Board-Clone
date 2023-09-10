@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-image: url(bg123.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: aliceblue;
+}
+
+nav {
+    display: flex;
+    gap: 10px;
+    height: 20px;
+    padding: 20px;
+    align-items: center;
+    font-size: 1.25em;
+    border-bottom: 1px solid whitesmoke;
+}
+
+nav a{
+    padding: 10px 0px;
+    color: white;
+    text-decoration: none;
+}
+
+nav a:active {
+text-decoration: underline;
+}
+
+h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10em;
+    font-weight: 500;
+    font-family: 'Cedarville Cursive', cursive;
+}
+
+.card1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card1 .para1 {
+    font-size: 1.3em;
+    font-family: 'Phudu', cursive;
+}
+
+.card1 .para2 {
+    display: flex;
+    width: 400px;
+    font-size: 1.1em;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+    margin: 320px 0 0 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 45px;
+    width: 200px;
+    background-color: rgb(80, 48, 155);
+    border: none;
+    color: aliceblue;
+    border-radius: 10px;
+    font-size: 1.2em;
+    transition: .3s ease-in-out;
+}
+
+button:hover {
+    background-color: white;
+    color: black;
+}

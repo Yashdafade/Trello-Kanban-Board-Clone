@@ -7,6 +7,8 @@ let sidebar1 = document.getElementById("sidebar")
 
 let closesidebar1 = document.getElementById("closesidebar")
 
+let closesidebar2 = document.getElementById("btn1")
+
 opensidebar1.addEventListener("click", () => {
   sidebar1.style.transition = "0.5s ease"
   sidebar1.style.transform = "translate(0px)"
@@ -17,8 +19,11 @@ opensidebar2.addEventListener("click", () => {
   sidebar1.style.transform = "translate(0px)"
 })
 
-
 closesidebar1.addEventListener("click", () => {
+  sidebar1.style.transform = "translate(-250px)"
+})
+
+closesidebar2.addEventListener("click", () => {
   sidebar1.style.transform = "translate(-250px)"
 })
 

@@ -170,7 +170,7 @@ nav .open-sidebar {
     height: 350px;
     max-height: 600px;
     width: 320px;
-    background-color: whitesmoke;
+/*     background-color: whitesmoke; */
 }
 
 .space .box .input{
@@ -293,5 +293,5 @@ nav .open-sidebar {
     font-size: 1.4em;
     margin: 0;
     padding: 0;
-    color: #000000;
+    color: #ffffff;
 }

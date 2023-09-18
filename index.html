@@ -24,24 +24,47 @@
                 <ul>Boards</ul>
             </a>
         </nav>
-        <h1 style="color: aliceblue;">Welcome to Tello</h1>
+
+        <ul class="dynamic">
+            <li><span class="auto-input"></span></li>
+        </ul>
+        <!-- <h1 style="color: aliceblue;">Welcome to Tello</h1> -->
 
         <div class="card1 max-w-sm rounded overflow-hidden shadow-lg">
-            <img class="w-full" src="images4.jpg" width="150px" style="border-radius: 10px;">
+            <img class="w-full" src="img6.avif" width="150px" style="border-radius: 10px;">
             <div class="px-6 py-4">
-                <div class="para1 font-bold text-xl mb-2" style="text-align: center; margin: 10px; color: aliceblue;">What You Can Do?
-                </div>
-                <p class=" para2 text-gray-700 text-base" style="color: aliceblue;">
-                    Elevate productivity with 'Tello': Seamlessly manage tasks, streamline teamwork, and achieve goals.
-                    Intuitive design, real-time collaboration, and personalized organization make every project a
-                    success.
+                <!-- <div class="para1 font-bold text-xl mb-2" style="text-align: center; margin: 10px; color: aliceblue;">
+                    What You Can Do?
+                </div> -->
+                <p class="para2 text-gray-700 text-base" style="color: aliceblue; text-align: justify;">
+                    <h3 style="display: flex; justify-content: center; font-size: 1.4em; color: aliceblue; margin-top: 20px;" >Elevate Your Productivity With Tello</h3>
+                    <ul style="list-style: circle; color: aliceblue; font-size: 1.2em; margin-top: 15px;">
+                        <li>Seamlessly manage tasks</li>
+                        <li>Streamline teamwork and achieve goals</li>
+                        <li>Intuitive design</li>
+                        <li>Real-time collaboration and personalized organization make every project a success.</li>
+                    </ul>
                 </p>
+                
+                
             </div>
         </div>
 
         <a href="TelloBoard.html"><button class="create-btn">Create Your Board<i
                     class='bx bxs-chevrons-right'></i></button></a>
     </div>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed(".auto-input", {
+            strings: ["Welcome To Tello"],
+            typeSpeed: 70,
+            backSpeed: 70,
+            loop: true,
+        
+        })
+
+    </script>
 
 
 </body>

@@ -55,6 +55,8 @@ mybutton.addEventListener('click', (e) => {
     const mySpan = document.createElement('span')
     mySpan.innerHTML = 'x';
     myli.appendChild(mySpan)
+
+    name1.value = "";
   }
 
   const close = document.querySelectorAll('span')
@@ -83,6 +85,8 @@ mybutton2.addEventListener('click', (e) => {
     const mySpan = document.createElement('span')
     mySpan.innerHTML = 'x';
     myli.appendChild(mySpan)
+
+    name2.value = "";
   }
 
   const close = document.querySelectorAll('span')
@@ -100,6 +104,7 @@ mybutton2.addEventListener('click', (e) => {
 const name3 = document.querySelector("#name3")
 const mybutton3 = document.querySelector(".btnlist3")
 const list3 = document.querySelector(".container3 ul")
+const container4 = document.getElementById("container3")
 
 mybutton3.addEventListener('click', (e) => {
   if (name3.value != "") {
@@ -111,7 +116,12 @@ mybutton3.addEventListener('click', (e) => {
 
     const mySpan = document.createElement('span')
     mySpan.innerHTML = 'x';
-    myli.appendChild(mySpan)
+    myli.appendChild(mySpan);
+
+    name3.value = "";
+
+    // // const containerHeight = container4.scrollHeight;
+    // container4.style.height = 10 + "px";
   }
 
   const close = document.querySelectorAll('span')

@@ -42,12 +42,11 @@ nav a:active {
 text-decoration: underline;
 }
 
-h1 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.dynamic li span{
+    margin-left: 360px;
     font-size: 10em;
     font-weight: 500;
+    color: aliceblue;
     font-family: 'Cedarville Cursive', cursive;
 }
 
@@ -75,7 +74,7 @@ button {
     align-items: center;
     justify-content: center;
     gap: 3px;
-    margin: 320px 0 0 0;
+    margin: 230px 0 0 0;
     position: absolute;
     top: 50%;
     left: 50%;

@@ -5,15 +5,21 @@
 }
 
 body {
-    background-color: black;
-    background: #000000;
-    background-image: url(bg123.jpeg);
-    background-repeat: no-repeat;
-    background-position: cover;
-    background-position: center;
-    min-height: 100vh; 
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
 }
 
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: linear-gradient(-45deg, #0d0b3b, #7928ca, #0d0b3b, #7928ca);
+    background-size: 400% 400%;
+}
 
 nav {
     display: flex;
@@ -27,7 +33,7 @@ nav {
 
 nav h3,a{
     padding: 10px 0px;
-    color: white;
+    color: aliceblue;
     text-decoration: none;
 }
 

@@ -6,40 +6,31 @@
 
 body {
     background-color: black;
-    background:	#000000;
+    background: #000000;
     background-image: url(bg123.jpeg);
     background-repeat: no-repeat;
     background-position: cover;
 }
 
-#main{
-    transition: margin-left .5s;
-}
 
 nav {
     display: flex;
-    height: 20px;
     gap: 10px;
+    height: 20px;
     padding: 20px;
     align-items: center;
     font-size: 1.25em;
     border-bottom: 1px solid whitesmoke;
 }
 
-nav a,
-h3 {
-    padding: 80px 0px;
+nav h3,a{
+    padding: 10px 0px;
     color: white;
     text-decoration: none;
 }
 
-nav a:active {
-    text-decoration: underline;
-}
 
 nav .open-sidebar {
-    /* margin: 5px;
-    padding: 5px; */
     font-size: 1.5em;
     background-color: transparent;
     border: none;
@@ -67,7 +58,7 @@ nav .open-sidebar {
 
 
 
-.sidebar  .inputname {
+.sidebar .inputname {
     height: 20px;
     border: none;
     outline: none;
@@ -80,7 +71,7 @@ nav .open-sidebar {
     border-radius: 5px;
 }
 
-.sidebar  .submit-btn {
+.sidebar .submit-btn {
     height: 35px;
     width: 100px;
     border: none;
@@ -91,7 +82,7 @@ nav .open-sidebar {
     transition: .3s ease-in-out;
 }
 
-.sidebar  .submit-btn:hover{
+.sidebar .submit-btn:hover {
     background-color: white;
     color: black;
 }
@@ -104,12 +95,12 @@ nav .open-sidebar {
     font-size: 2em;
     cursor: pointer;
     top: 0;
-    right: 0 ;
+    right: 0;
     color: whitesmoke;
 
 }
 
-.boardname{
+.boardname {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -119,82 +110,91 @@ nav .open-sidebar {
     cursor: pointer;
 }
 
-.inputj{
+.inputj {
     display: flex;
     margin: 5px;
     padding: 5px;
 }
 
-#name1, #name2, #name3{
+#name1,
+#name2,
+#name3 {
     margin: 5px;
-    height: 30px; 
-    width: 250px; 
+    height: 35px;
+    width: 280px;
     border: 2px solid black;
     border-radius: 5px;
     text-align: center;
     font-size: 1.3em;
 }
 
-.btnlist, .btnlist2, .btnlist3{
+.btnlist,
+.btnlist2,
+.btnlist3 {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 32px;
-    width: 30px;
+    height: 35px;
+    width: 32px;
     margin: 5px;
     border: 2px solid blue;
     border-radius: 5px;
     background-color: blue;
     color: white;
     cursor: pointer;
-}
-
-.btnlist i{
     font-size: 1.5em;
 }
 
-.space{
+/* .btnlist,.btnlist2,.btnlist3 i{
+    font-size: 1.5em;
+} */
+
+.space {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 10px;
     margin-top: 20px;
-    
+
 }
 
-.space .box{
+.space .box {
     display: flex;
     margin: 20px;
     box-sizing: border-box;
     border-radius: 10px;
-    height: 350px;
-    max-height: 600px;
-    width: 320px;
-/*     background-color: whitesmoke; */
+    /* max-height: 600px; */
+    width: 350px;
+    background-color: #fff;
+    align-self: flex-start;
 }
 
-.space .box .input{
+.space .box .input {
     display: flex;
     flex-direction: column;
     margin-top: 5px;
     align-items: center;
 }
 
-.space .box .container{ 
-    display: flex;  
+.space .box .container {
+    position: sticky;
+    display: flex;
     align-items: center;
     /* justify-content:space-between; */
-    margin-left: 10px;
-    
+    width: 100%;
+    max-width: 300px;
+    background-color: #fff;
+    box-sizing: border-box;
+    border-radius: 10px;
 }
 
-.space .box .container ul{
+.space .box .container ul {
     list-style: none;
     width: 300px;
 
 }
 
-.space .box .container ul li{
+.space .box .container ul li {
     font-size: 1.2em;
     width: 100%;
     height: 50px;
@@ -203,34 +203,41 @@ nav .open-sidebar {
     position: relative;
     cursor: pointer;
     display: block;
-    margin: 10px 0;
+    margin: 13px -13px;
+    padding: 0px 10px;
     box-shadow: -3px 6px 4px #222;
+    border-radius: 5px;
     transition: 0.5s linear;
 }
 
-.space .box .container ul li span{
+.space .box .container ul li span {
     position: absolute;
     top: 0;
     right: 0;
     width: 40px;
     text-align: center;
     background-color: rgb(134, 165, 206);
+    border-radius: 5px;
 }
 
-.space .box .container2{ 
-    display: flex;  
+.space .box .container2 {
+    position: sticky;
+    display: flex;
     align-items: center;
     /* justify-content:space-between; */
-    margin-left: 10px;
-    
+    width: 100%;
+    max-width: 300px;
+    background-color: #fff;
+    box-sizing: border-box;
+    border-radius: 10px;
 }
 
-.space .box .container2 ul{
+.space .box .container2 ul {
     list-style: none;
     width: 300px;
 }
 
-.space .box .container2 ul li{
+.space .box .container2 ul li {
     font-size: 1.2em;
     width: 100%;
     height: 50px;
@@ -239,34 +246,41 @@ nav .open-sidebar {
     position: relative;
     cursor: pointer;
     display: block;
-    margin: 10px 0;
+    margin: 13px -13px;
+    padding: 0px 10px;
     box-shadow: -3px 6px 4px #222;
+    border-radius: 5px;
     transition: 0.5s linear;
 }
 
-.space .box .container2 ul li span{
+.space .box .container2 ul li span {
     position: absolute;
     top: 0;
     right: 0;
     width: 40px;
     text-align: center;
     background-color: rgb(134, 165, 206);
+    border-radius: 5px;
 }
 
-.space .box .container3{ 
-    display: flex;  
+.space .box .container3 {
+    position: sticky;
+    display: flex;
     align-items: center;
     /* justify-content:space-between; */
-    margin-left: 10px;
-    
+    width: 100%;
+    max-width: 300px;
+    background-color: #fff;
+    box-sizing: border-box;
+    border-radius: 10px;
 }
 
-.space .box .container3 ul{
+.space .box .container3 ul {
     list-style: none;
     width: 300px;
 }
 
-.space .box .container3 ul li{
+.space .box .container3 ul li {
     font-size: 1.2em;
     width: 100%;
     height: 50px;
@@ -275,23 +289,26 @@ nav .open-sidebar {
     position: relative;
     cursor: pointer;
     display: block;
-    margin: 10px 0;
+    margin: 13px -13px;
+    padding: 0px 10px;
     box-shadow: -3px 6px 4px #222;
+    border-radius: 5px;
     transition: 0.5s linear;
 }
 
-.space .box .container3 ul li span{
+.space .box .container3 ul li span {
     position: absolute;
     top: 0;
     right: 0;
     width: 40px;
     text-align: center;
     background-color: rgb(134, 165, 206);
+    border-radius: 5px;
 }
 
-.space .box .input h3{
+.space .box .input h3 {
     font-size: 1.4em;
     margin: 0;
     padding: 0;
-    color: #ffffff;
+    color: white;
 }

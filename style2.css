@@ -10,6 +10,8 @@ body {
     background-image: url(bg123.jpeg);
     background-repeat: no-repeat;
     background-position: cover;
+    background-position: center;
+    min-height: 100vh; 
 }
 
 
@@ -165,8 +167,15 @@ nav .open-sidebar {
     border-radius: 10px;
     /* max-height: 600px; */
     width: 350px;
+    max-height: 500px;
+    overflow-y: auto;
+    overflow-x: hidden;
     background-color: #fff;
     align-self: flex-start;
+}
+
+.space .box::-webkit-scrollbar {
+    width: 6px; /* Adjust the width to make it thin */
 }
 
 .space .box .input {

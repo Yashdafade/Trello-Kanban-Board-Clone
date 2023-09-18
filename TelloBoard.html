@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style2.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&family=Poppins&display=swap"
+        rel="stylesheet">
 
     <title>TelloBoard</title>
 </head>
@@ -17,13 +21,11 @@
         </button>
 
         <h3><i class='bx bxl-xing'></i>Tello</h3>
-        <a href="index.html">
-            <ul>Home</ul>
-        </a>
-        <a href="TelloBoard.html">
-            <ul>Boards</ul>
-        </a>
+        <a href="index.html"><ul>Home</ul></a>
+        <a href="TelloBoard.html"><ul>Boards</ul></a>
     </nav>
+
+
 
     <div class="sidebar" id="sidebar">
         <div class="closesidebar" id="closesidebar">
@@ -36,11 +38,11 @@
         <span>Enter Your Board Name</span>
     </div>
 
-    
+
     <div class="space">
         <div class="todo box">
             <div class="input">
-                <h3>TO-DO</h3>
+                <h3 style="color: black;">TO-DO</h3>
                 <form id="inputj" class="inputj">
                     <input type="text" id="name1" required placeholder="Enter To-Do">
                     <button type="submit" class="btnlist">
@@ -49,14 +51,14 @@
                 </form>
                 <div class="container">
                     <ul>
-                        
+
                     </ul>
                 </div>
             </div>
         </div>
         <div class="doing box">
             <div class="input">
-                <h3>DOING</h3>
+                <h3 style="color: black;">DOING</h3>
                 <form id="inputj" class="inputj">
                     <input type="text" id="name2" required placeholder="Enter Doing">
                     <button type="submit" class="btnlist2">
@@ -65,23 +67,23 @@
                 </form>
                 <div class="container2">
                     <ul>
-                        
+
                     </ul>
                 </div>
             </div>
         </div>
         <div class="done box">
             <div class="input">
-                <h3>DONE</h3>
+                <h3 style="color: black;">DONE</h3>
                 <form id="inputj" class="inputj">
                     <input type="text" id="name3" required placeholder="Enter Done">
                     <button type="submit" class="btnlist3">
                         <i class='bx bx-plus'></i>
                     </button>
                 </form>
-                <div class="container3">
+                <div class="container3" id="container3">
                     <ul>
-                      
+
                     </ul>
                 </div>
             </div>
